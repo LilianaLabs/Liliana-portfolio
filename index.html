@@ -447,19 +447,18 @@ footer{
 
 .hero-name{
 font-size:2rem !important;
-line-height:1.1 !important;
+line-height:1 !important;
 
-display:block !important;
-text-align:center !important;
+display:flex !important;
+flex-direction:column !important;
+align-items:center !important;
 
 padding:0 20px !important;
-
-word-break:normal !important;
-overflow-wrap:normal !important;
-
 max-width:100% !important;
 }
-
+.hero-name span{
+display:block;
+}
 }
 </style>
 </head>
@@ -487,7 +486,10 @@ max-width:100% !important;
 <section id="hero">
   <div class="container">
     <p class="hero-eyebrow">✦ Computer Science Student &amp; AI Enthusiast</p>
-    <h1 class="hero-name">Liliana<br>Suleymanova</h1>
+    <h1 class="hero-name">
+<span>Liliana</span>
+<span>Suleymanova</span>
+</h1>
     <p class="hero-title">
       Building the future with <span>Artificial Intelligence</span> &amp; <span>Emerging Technologies</span>
     </p>
